@@ -59,11 +59,10 @@ class _MyAppState extends State<MyApp> {
                 onPressed: _updateInfo?.updateAvailability ==
                         UpdateAvailability.updateAvailable
                     ? () {
-                        InAppUpdate.performImmediateUpdate()
-                            .catchError((e) {
-                              showSnack(e.toString());
-                             return AppUpdateResult.inAppUpdateFailed;
-                            });
+                        InAppUpdate.performImmediateUpdate().catchError((e) {
+                          showSnack(e.toString());
+                          return AppUpdateResult.inAppUpdateFailed;
+                        });
                       }
                     : null,
               ),

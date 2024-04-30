@@ -1,4 +1,4 @@
-name: in_app_update
+x`name: in_app_update
 description: Enables In App Updates on Android using the official Android APIs.
 version: 4.2.2
 homepage: https://jonasbark.de
